@@ -91,3 +91,21 @@ print(a.split(",")) #Output: ['Python', ' Java', ' SQL', ' DS']
 print(a.rsplit(",", 1)) #Output: ['Python, Java, SQL', ' DS']
 x="Hello\nWorld"
 print(x.splitlines()) #Output: ['Hello', 'World']
+result="-".join(a)
+print(result) #Output:P-y-t-h-o-n-,- -J-a-v-a-,- -S-Q-L-,- -D-S
+j="apple-pie"
+print(j.partition("-"))
+print(j.rpartition("-"))
+
+#7. Whitespace & Trimming Methods
+s="  Hello World  "
+print(s.strip())
+print(s.lstrip())
+print(s.rstrip())
+
+#8. Encoding & Decoding Methods
+s="Hello World"
+encoded=s.encode("utf-8")
+print(encoded)
+decoded=encoded.decode("utf-8")
+print(decoded)
