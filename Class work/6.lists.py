@@ -13,6 +13,7 @@ print(mixed)#Output: [10, 'Python', 3.14, True]
 #List with Nested Lists
 nested_list = [[1, 2, 3], ["a", "b", "c"], [True, False]]
 print(nested_list) #Output:[[1, 2, 3], ['a', 'b', 'c'], [True, False]]
+print(nested_list[1][2])#Output:c
 
 #List using list() Constructor
 list_from_tuple = list((1, 2, 3)) 
