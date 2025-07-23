@@ -1,4 +1,5 @@
-#if-elif 
+'''if-elif 
+1)
 hr,mins=list(map(int,input("Enter the time:").split(':')))
 if hr>=0 and hr<=24 and mins>=0 and mins<=60:
     if hr>=0 and hr<4:
@@ -63,3 +64,67 @@ if movies in movie_list:
         print("{movies} Movie is an adult movie")
 else:
     print("Movie is not available")
+
+#for loop
+1)
+seats={
+    "U1":{'price':1030,'booking_status':True},
+    "U2":{'price':1030,'booking_status':False},
+    "U3":{'price':1030,'booking_status':False},
+    "U4":{'price':1030,'booking_status':True},
+    "U5":{'price':1030,'booking_status':False},
+    "L1":{'price':1030,'booking_status':True},
+    "L2":{'price':1030,'booking_status':False},
+    "L3":{'price':1030,'booking_status':False},
+    "L4":{'price':1030,'booking_status':True},
+    "L5":{'price':1030,'booking_status':False}
+}
+for i in seats:
+    if seats[i]['booking_status']:
+        print(f'***{i}***')
+    else:
+        print(f'{i}-{seats[i]["price"]}')
+seatno=input("Enter the seatno: ").upper()
+if seatno in seats:
+    if seats[seatno]['booking_status']:
+        print(f'{seatno} is booked. Go for another one.')
+    else:
+        name=input("Enter name: ")
+        age=int(input("Enter age: "))
+        gender=input("Enter gender: ").upper
+        if age<=5:
+            print(f'Hello {name} your booking is succesfull with free of cost')
+        elif age<15:
+            print(f'Hello {name} your booking is succesfull with 50% discount\nTotal amount={seats[seatno]["price"]*0.5}')
+        else:
+            print(f'Hello {name} your seat is booked succesfully. Pay the full amount-{seats[i]["price"]}')
+        print(f'{name} {age} {gender}')
+else:
+    print("Enter correct seatno: ")
+
+#Prime number
+n=int(input("Enter a number: "))
+c=0
+for i in range(2,n//2+1):
+    if n%i==0:
+        c=1
+        break
+if not c:
+    print("Prime number")
+else:
+    print("Not a prime number")
+
+#Factorial
+n=int(input("enter the number: "))
+fact=1
+for i in range(1,n+1):
+    fact*=i
+print(f'{n}!={fact}')
+
+#Sum of n numbers
+n=int(input("Enter the number: "))
+sum=0
+for i in range(1,n+1):
+    sum+=i
+print(sum)
+'''
