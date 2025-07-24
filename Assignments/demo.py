@@ -5,11 +5,11 @@ product_id = int(input("Enter Food Item ID: "))
 product_name = input("Enter Food Item Name: ")
 price = float(input("Enter Price: ₹"))
 categories = list(map(str.strip, input("Enter Categories (comma-separated, e.g., Main Course, Biryani): ").split(',')))
-stock_details = tuple(map(int, input("Enter Available and Sold Stock (space-separated): ").split()))
+stock_details = tuple(map(int, input("Enter Available and Sold Stock : ").split()))
 discount = float(input("Enter Discount Percentage: "))
 features = set(map(str.strip, input("Enter Food Features (comma-separated, e.g., Spicy, Vegan): ").split(',')))
-# Ask for input and split it
-supplier_name, supplier_contact, supplier_location = map(str.strip, input("Enter Supplier Name, Contact Number, and Location (comma-separated): ").split(','))
+
+supplier_name, supplier_contact, supplier_location = map(str.strip, input("Enter Supplier Name, Contact Number, and Location : ").split(','))
 
 supplier_details = {
     'Name': supplier_name,
