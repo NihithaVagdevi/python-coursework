@@ -31,4 +31,3 @@ print(f"Stock Available: {stock_details[0]} units")
 
 # .format() method
 print("Restaurant Details: Name - {}, Contact - {}, Location - {}".format(supplier_name, supplier_contact, supplier_location))
-print(f"Stock Available: {stock_details[0]} units")
