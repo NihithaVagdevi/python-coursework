@@ -309,15 +309,6 @@ elif age2>age1:
     print("Second person is older")
 else:
     print("Same age")
-
-#20. Check if an angle is acute, right, or obtuse
-a=int(input("Enter angle:"))
-if a<90:
-    print("Acute angle")
-elif a>90:
-    print("Obtuse angle")
-else:
-    print("Right angle")
 '''
 #20. Check if an angle is acute, right, or obtuse
 a=int(input("Enter angle:"))
@@ -327,3 +318,4 @@ elif a>90:
     print("Obtuse angle")
 else:
     print("Right angle")
+
